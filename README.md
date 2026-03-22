@@ -8,7 +8,7 @@
 ssh-keygen -t rsa -b 2048 -f ./cloud-key
 ```
 
-### Connecting to Cloud with ssh
+### Connecting to Cloud With SSH
 
 ```bash
 ssh -i ./cloud-key username@hostname
@@ -18,4 +18,10 @@ ssh -i ./cloud-key username@hostname
 
 ```bash
 passwd
+```
+
+### Format LLVM-Project Code
+
+```bash
+clang-format -i -style=llvm file.cpp
 ```
