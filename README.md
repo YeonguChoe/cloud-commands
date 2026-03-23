@@ -25,3 +25,9 @@ passwd
 ```bash
 clang-format -i -style=llvm file.cpp
 ```
+
+### Download a File From Remote Server
+
+```bash
+scp -i ./cloud-key 
+```
