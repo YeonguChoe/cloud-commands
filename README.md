@@ -38,3 +38,9 @@ tar --use-compress-program=lz4 -cf <file-name>.tar.lz4 <folder-name>/
 tar --use-compress-program=lz4 -xf <file-name>.tar.lz4
 ```
 
+### Add Token
+
+```bash
+hcloud context create main
+```
+
