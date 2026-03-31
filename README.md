@@ -20,10 +20,10 @@ ssh -i ./cloud-key username@hostname
 passwd
 ```
 
-### Download a File From Remote Server
+### Upload file to Remote Server
 
 ```bash
-scp -i ./cloud-key 
+scp -i <ssh-key> <file-to-upload> <username>@<host>:<path>
 ```
 
 ### Compress folder with LZ4
