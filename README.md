@@ -15,7 +15,13 @@ chmod 600 <key>.pem
 ### Connecting to Cloud With SSH
 
 ```bash
-ssh -i ./cloud-key username@hostname
+ssh -i ./cloud-key -o PubKeyAcceptedAlgorithms=+ssh-rsa username@hostname
+```
+
+- If server does not allow ssh-rsa, add `-o PubKeyAcceptedAlgorithms=+ssh-rsa`
+
+```bash
+ssh -i ./cloud-key -o PubKeyAcceptedAlgorithms=+ssh-rsa username@hostname
 ```
 
 ### Change Linux User Password
