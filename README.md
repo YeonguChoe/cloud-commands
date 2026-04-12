@@ -1,16 +1,15 @@
 # Cloud commands
 
-
 ### SSH Key Generation
 
 ```bash
-ssh-keygen -t rsa -b 2048 -f ./cloud-key
+ssh-keygen -b 2048 -f <key>.pem -m PEM -t rsa
 ```
 
 ### Change Permission of SSH Key File
 
 ```bash
-chmod 600 ./cloud-key
+chmod 600 <key>.pem
 ```
 
 ### Connecting to Cloud With SSH
