@@ -47,3 +47,17 @@ tar --use-compress-program=lz4 -cf <file-name>.tar.lz4 <folder-name>/
 ```bash
 tar --use-compress-program=lz4 -xf <file-name>.tar.lz4
 ```
+
+## AWS
+
+### Upload file from EC2 to S3
+
+```bash
+aws s3 cp <file> s3://<bucket>/<folder>/<file>
+```
+
+### Download file from S3 to EC2
+
+```bash
+aws s3 cp s3://<bucket>/<folder>/<file> .
+```
