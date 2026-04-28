@@ -108,6 +108,12 @@ gcloud compute ssh <INSTANCE_NAME>
 exit
 ```
 
+- Add SSH login credential to `$HOME/.ssh/config`
+
+```bash
+gcloud compute config-ssh
+```
+
 ## AWS
 
 ### Upload file from EC2 to S3
