@@ -48,6 +48,66 @@ tar --use-compress-program=lz4 -cf <file-name>.tar.lz4 <folder-name>/
 tar --use-compress-program=lz4 -xf <file-name>.tar.lz4
 ```
 
+## GCP
+- Reference: https://docs.cloud.google.com/sdk/docs/cheatsheet
+
+### Login related
+
+- Login
+```bash
+gcloud auth login
+```
+
+- List logged-in accounts
+```bash
+gcloud auth list
+```
+
+- Logout
+```bash
+gcloud auth revoke <ACCOUNT>
+```
+
+### Project related
+
+- List existing projects
+
+```bash
+gcloud projects list
+```
+
+- Check selected project
+
+```bash
+gcloud config get project
+```
+
+- Change selected project
+
+```bash
+gcloud config set project <PROJECT_ID>
+```
+
+### SSH connection
+
+- Check existing instances
+
+```bash
+gcloud compute instances list
+```
+
+- Connect to instance
+
+```bash
+gcloud compute ssh <INSTANCE_NAME>
+```
+
+- Disconnect SSH connection
+
+```bash
+exit
+```
+
 ## AWS
 
 ### Upload file from EC2 to S3
