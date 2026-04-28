@@ -99,7 +99,7 @@ gcloud compute instances list
 - Connect to instance
 
 ```bash
-gcloud compute ssh <INSTANCE_NAME>
+gcloud compute ssh <NAME>@<INSTANCE_NAME>
 ```
 
 - Disconnect SSH connection
