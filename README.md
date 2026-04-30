@@ -51,7 +51,7 @@ tar --use-compress-program=lz4 -xf <file-name>.tar.lz4
 ## GCP
 - Reference: https://docs.cloud.google.com/sdk/docs/cheatsheet
 - x86_64: N2 < N4 < C4
-- AArch64: C4A < N4A
+- aarch64: C4A < N4A
 
 ### Login related
 
