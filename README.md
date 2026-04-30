@@ -50,6 +50,8 @@ tar --use-compress-program=lz4 -xf <file-name>.tar.lz4
 
 ## GCP
 - Reference: https://docs.cloud.google.com/sdk/docs/cheatsheet
+- x86_64: N2 < N4 < C4
+- AArch64: C4A < N4A
 
 ### Login related
 
@@ -112,6 +114,26 @@ exit
 
 ```bash
 gcloud compute config-ssh
+```
+
+### Instance
+
+- Boot instance
+
+```bash
+gcloud compute instances start <INSTANCE_NAME>
+```
+
+- Shutdown instance
+
+```bash
+gcloud compute instances stop <INSTANCE_NAME>
+```
+
+- Reboot instance
+
+```bash
+gcloud compute instances reset <INSTANCE_NAME>
 ```
 
 ## AWS
