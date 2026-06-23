@@ -149,3 +149,9 @@ aws s3 cp <file> s3://<bucket>/<folder>/<file>
 ```bash
 aws s3 cp s3://<bucket>/<folder>/<file> .
 ```
+
+## Fast Charge iPhone on Linux
+
+```bash
+echo Fast | sudo tee /sys/class/power_supply/apple_mfi_fastcharge_*/charge_type
+```
